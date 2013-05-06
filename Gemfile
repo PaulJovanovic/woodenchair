@@ -6,6 +6,13 @@ gem 'pg'
 
 gem 'haml'
 
+gem 'devise'
+
+gem "paperclip"
+gem 'aws-sdk'
+
+gem 'bourbon'
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'

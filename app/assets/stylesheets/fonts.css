@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'japan';
+    src: url('/assets/japan-webfont.eot');
+    src: url('/assets/japan-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/japan-webfont.woff') format('woff'),
+         url('/assets/japan-webfont.ttf') format('truetype'),
+         url('/assets/japan-webfont.svg#japanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

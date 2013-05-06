@@ -1,0 +1,38 @@
+.container
+  .pal
+    #wooden-chair
+      .title
+        WOODEN CHAIR
+      .content
+        a way of life
+    .box
+      .pal
+        .title
+          %h2.mtn Sign up
+        .content
+          = form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+            %table
+              %tr
+                %td
+                  = f.label :username
+                %td
+                  = f.text_field :username, :autofocus => true
+              %tr
+                %td.ptm
+                  = f.label :email
+                %td.ptm
+                  = f.email_field :email
+              %tr
+                %td.ptm
+                  = f.label :password
+                %td.ptm
+                  = f.password_field :password
+              %tr
+                %td.ptm
+                  = f.label :password_confirmation
+                %td.ptm
+                  = f.password_field :password_confirmation
+            = f.submit "sign up", :class => "btn btn-submit"
+          = link_to new_session_path(resource_name) do
+            .btn.btn-primary
+              back

@@ -1,0 +1,11 @@
+#navbar
+	.container
+		.pam.phl
+			Wooden Chair
+			.pull-right
+				%span.thumbnail
+				%span.icon.plm 
+					= current_user.username
+				%i.icon.icon-home.plm.prx
+				= link_to destroy_user_session_path, :class => "icon", :method => "delete" do 
+					%i.icon.icon-signout.plm
